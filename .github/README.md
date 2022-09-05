@@ -3,20 +3,20 @@
 </h2>
 
 <p align="center">
-  <img src="https://telegra.ph/file/2d5d9ad26b7990ca5c9a9.jpg">
+  <img src="https://telegra.ph/file/e366a7afb800b1f43c3d3.jpg">
 </p>
 
 <p align="center">
-<a href="https://github.com/love-u-bobby/CUTIE-MUSIC/stargazers"><img src="https://img.shields.io/github/stars/love-u-bobby/CUTIE-MUSIC?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/love-u-bobby/CUTIE-MUSIC/network/members"> <img src="https://img.shields.io/github/forks/love-u-bobby/CUTIE-MUSIC?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/love-u-bobby/CUTIE-MUSIC/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/LuciferRJ29/NancyMusic/stargazers"><img src="https://img.shields.io/github/stars/LuciferRJ29/NancyMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/LuciferRJ29/NancyMusic/network/members"> <img src="https://img.shields.io/github/forks/LuciferRJ29/NancyMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/LuciferRJ29/NancyMusic/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=yellow&label=pyrogram&logo=python&logoColor=green&style=for-the-badge" /></a>
-<a href=""> <img src="https://img.shields.io/github/last-commit/love-u-bobby/CUTIE-MUSIC?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+<a href=""> <img src="https://img.shields.io/github/last-commit/LuciferRJ29/NancyMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/affb05d38285e89b3b366.jpg">
+  <img src="https://telegra.ph/file/e366a7afb800b1f43c3d3.jpg">
 </p>
 
 <h3 align="center">
@@ -37,11 +37,11 @@
 </h3>
 
 <p align="center">
-<a href="https://telegram.me/COMRADE_ROBOTZ"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/DevilsHaveliMF"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <p align="center">
-<a href="https://telegram.me/love_you_bobby"><img src="https://img.shields.io/badge/%20BOBBY-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/Lucifer_was_bot"><img src="https://img.shields.io/badge/%20Lucifer-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <h3 align="center">
