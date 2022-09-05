@@ -24,7 +24,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴɢᴇʟ ダ ᴍᴜsɪᴄ​")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ɴᴀɴᴄʏ ダ ᴍᴜsɪᴄ​")
 
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "5448900586").split())
@@ -43,9 +43,9 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/comrade_bots")
+    "SUPPORT_CHANNEL", "https://t.me/DevilsHaveliMF")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/comrade_robotz")
+    "SUPPORT_GROUP", "https://t.me/DevilsServerMF")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 
@@ -61,7 +61,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "5"))
 
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "6"))
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/love-u-bobby/CUTIE-MUSIC")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/LuciferRJ29/NancyMusic")
 
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
@@ -94,7 +94,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "bobbyxlogs.txt"
+LOG_FILE_NAME = "nancyxlogs.txt"
 adminlist = {}
 lyrical = {}
 chatstats = {}
