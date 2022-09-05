@@ -27,7 +27,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ɴᴀɴᴄʏ ダ ᴍᴜsɪᴄ​")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5448900586").split())
+    map(int, getenv("OWNER_ID", "1572358619").split())
 )
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -103,11 +103,11 @@ clean = {}
 
 autoclean = []
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/146c3874408e6c4511d5f.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/e366a7afb800b1f43c3d3.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/fbfe0547f984638a5c49c.jpg",
+    "https://telegra.ph/file/e366a7afb800b1f43c3d3.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
