@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.core.call import Bobby
-from BOBBY.utils.database import is_music_playing, music_off
-from BOBBY.utils.decorators import AdminRightsCheck
+from Nancy import app
+from Nancy.core.call import Nancy
+from Nancy.utils.database import is_music_playing, music_off
+from Nancy.utils.decorators import AdminRightsCheck
 
 # Commands
 PAUSE_COMMAND = get_command("PAUSE_COMMAND")
@@ -25,7 +25,7 @@ async def pause_admin(cli, message: Message, _, chat_id):
     if not await is_music_playing(chat_id):
         return await message.reply_text(_["admin_1"])
     await music_off(chat_id)
-    await Bobby.pause_stream(chat_id)
+    await Nancy.pause_stream(chat_id)
     await message.reply_text(
         _["admin_2"].format(message.from_user.mention)
     )
