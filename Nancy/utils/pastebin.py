@@ -13,7 +13,7 @@ async def post(url: str, *args, **kwargs):
         return data
 
 
-async def Bobbybin(text):
+async def Nancybin(text):
     resp = await post(f"{BASE}api/v2/paste", data=text)
     if not resp["success"]:
         return
