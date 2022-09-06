@@ -18,9 +18,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from BOBBY import LOGGER, YouTube, app
-from BOBBY.misc import db
-from BOBBY.utils.database import (add_active_chat,
+from Nancy import LOGGER, YouTube, app
+from Nancy.misc import db
+from Nancy.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        get_assistant,
                                        get_audio_bitrate, get_lang,
@@ -29,11 +29,11 @@ from BOBBY.utils.database import (add_active_chat,
                                        music_on, set_loop,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from BOBBY.utils.exceptions import AssistantErr
-from BOBBY.utils.inline.play import (stream_markup,
+from Nancy.utils.exceptions import AssistantErr
+from Nancy.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from BOBBY.utils.stream.autoclear import auto_clean
-from BOBBY.utils.thumbnails import gen_thumb
+from Nancy.utils.stream.autoclear import auto_clean
+from Nancy.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
