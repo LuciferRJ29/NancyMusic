@@ -2,15 +2,15 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
 from strings import get_string
-from BOBBY import YouTube, app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils.database import (get_cmode, get_lang,
+from Nancy import YouTube, app
+from Nancy.misc import SUDOERS
+from Nancy.utils.database import (get_cmode, get_lang,
                                        get_playmode, get_playtype,
                                        is_active_chat,
                                        is_commanddelete_on,
                                        is_served_private_chat)
-from BOBBY.utils.database.memorydatabase import is_maintenance
-from BOBBY.utils.inline.playlist import botplaylist_markup
+from Nancy.utils.database.memorydatabase import is_maintenance
+from Nancy.utils.inline.playlist import botplaylist_markup
 
 
 def PlayWrapper(command):
