@@ -9,8 +9,8 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from BOBBY import app
-from BOBBY.utils.decorators.language import language
+from Nancy import app
+from Nancy.utils.decorators.language import language
 
 ###Commands
 LYRICS_COMMAND = get_command("LYRICS_COMMAND")
