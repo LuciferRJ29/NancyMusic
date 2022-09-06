@@ -5,9 +5,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import db
-from BOBBY.utils.decorators import AdminRightsCheck
+from Nancy import app
+from Nancy.misc import db
+from Nancy.utils.decorators import AdminRightsCheck
 
 # Commands
 SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
