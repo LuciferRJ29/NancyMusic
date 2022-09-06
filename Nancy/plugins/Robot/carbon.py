@@ -1,7 +1,7 @@
 from pyrogram.types import Message
 from pyrogram import filters
-from BOBBY import app, aiohttpsession as aiosession
-from BOBBY.utils.errors import capture_err
+from Nancy import app, aiohttpsession as aiosession
+from Nancy.utils.errors import capture_err
 from asyncio import gather
 from io import BytesIO
 
