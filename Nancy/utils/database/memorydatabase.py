@@ -1,6 +1,6 @@
 import config
 from config import PRIVATE_BOT_MODE
-from BOBBY.core.mongo import mongodb
+from Nancy.core.mongo import mongodb
 
 channeldb = mongodb.cplaymode
 commanddb = mongodb.commands
