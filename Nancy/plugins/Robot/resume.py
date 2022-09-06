@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.core.call import Bobby
-from BOBBY.utils.database import is_music_playing, music_on
-from BOBBY.utils.decorators import AdminRightsCheck
+from Nancy import app
+from Nancy.core.call import Nancy
+from Nancy.utils.database import is_music_playing, music_on
+from Nancy.utils.decorators import AdminRightsCheck
 
 # Commands
 RESUME_COMMAND = get_command("RESUME_COMMAND")
@@ -25,7 +25,7 @@ async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
         return await message.reply_text(_["admin_3"])
     await music_on(chat_id)
-    await Bobby.resume_stream(chat_id)
+    await Nancy.resume_stream(chat_id)
     await message.reply_text(
         _["admin_4"].format(message.from_user.mention)
     )
