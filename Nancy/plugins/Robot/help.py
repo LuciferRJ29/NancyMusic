@@ -6,13 +6,13 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command, get_string, helpers
-from BOBBY import app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils import help_pannel
-from BOBBY.utils.database import get_lang, is_commanddelete_on
-from BOBBY.utils.decorators.language import (LanguageStart,
+from Nancy import app
+from Nancy.misc import SUDOERS
+from Nancy.utils import help_pannel
+from Nancy.utils.database import get_lang, is_commanddelete_on
+from Nancy.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from BOBBY.utils.inline.help import (help_back_markup,
+from Nancy.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command
