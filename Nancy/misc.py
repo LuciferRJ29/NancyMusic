@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from BOBBY.core.mongo import pymongodb
+from Nancy.core.mongo import pymongodb
 
 from .logging import LOGGER
 
