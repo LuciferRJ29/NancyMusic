@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.utils.database.memorydatabase import (get_loop,
+from Nancy import app
+from Nancy.utils.database.memorydatabase import (get_loop,
                                                       set_loop)
-from BOBBY.utils.decorators import AdminRightsCheck
+from Nancy.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")
