@@ -7,16 +7,16 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils import get_readable_time
-from BOBBY.utils.database import (add_banned_user,
+from Nancy import app
+from Nancy.misc import SUDOERS
+from Nancy.utils import get_readable_time
+from Nancy.utils.database import (add_banned_user,
                                        get_banned_count,
                                        get_banned_users,
                                        get_served_chats,
                                        is_banned_user,
                                        remove_banned_user)
-from BOBBY.utils.decorators.language import language
+from Nancy.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")
