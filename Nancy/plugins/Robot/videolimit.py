@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils.database import set_video_limit
-from BOBBY.utils.decorators.language import language
+from Nancy import app
+from Nancy.misc import SUDOERS
+from Nancy.utils.database import set_video_limit
+from Nancy.utils.decorators.language import language
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 
