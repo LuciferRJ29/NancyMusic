@@ -3,11 +3,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.utils.database import (get_playmode, get_playtype,
+from Nancy import app
+from Nancy.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from BOBBY.utils.decorators import language
-from BOBBY.utils.inline.settings import playmode_users_markup
+from Nancy.utils.decorators import language
+from Nancy.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
