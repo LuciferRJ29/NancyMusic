@@ -2,9 +2,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from BOBBY import app
-from BOBBY.core.call import Bobby, autoend
-from BOBBY.utils.database import (get_client, is_active_chat,
+from Nancy import app
+from Nancy.core.call import Nancy, autoend
+from Nancy.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -13,7 +13,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from BOBBY.core.userbot import assistants
+            from Nancy.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -28,7 +28,7 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOG_GROUP_ID
-                                and chat_id != -1001791220145
+                                and chat_id != -1001735429770
                             ):
                                 if not await is_active_chat(chat_id):
                                     try:
