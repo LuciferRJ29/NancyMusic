@@ -3,12 +3,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils.database import (blacklist_chat,
+from Nancy import app
+from Nancy.misc import SUDOERS
+from Nancy.utils.database import (blacklist_chat,
                                        blacklisted_chats,
                                        whitelist_chat)
-from BOBBY.utils.decorators.language import language
+from Nancy.utils.decorators.language import language
 
 # Commands
 
