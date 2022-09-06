@@ -9,14 +9,14 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import db
-from BOBBY.utils import (Anonbin, get_channeplayCB,
+from Nancy import app
+from Nancy.misc import db
+from Nancy.utils import (Anonbin, get_channeplayCB,
                               seconds_to_min)
-from BOBBY.utils.database import (get_cmode, is_active_chat,
+from Nancy.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from BOBBY.utils.decorators.language import language, languageCB
-from BOBBY.utils.inline import queue_back_markup, queue_markup
+from Nancy.utils.decorators.language import language, languageCB
+from Nancy.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
