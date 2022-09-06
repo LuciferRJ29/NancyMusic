@@ -3,9 +3,9 @@ from pyrogram.types import Message
 
 import config
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils.database import add_off, add_on
+from Nancy import app
+from Nancy.misc import SUDOERS
+from Nancy.utils.database import add_off, add_on
 from Nancy.utils.decorators.language import language
 
 # Commands
