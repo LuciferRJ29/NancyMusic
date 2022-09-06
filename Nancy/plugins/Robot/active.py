@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils.database.memorydatabase import (
+from Nancy import app
+from Nancy.misc import SUDOERS
+from Nancy.utils.database.memorydatabase import (
     get_active_chats, get_active_video_chats)
 
 # Commands
