@@ -2,7 +2,7 @@ import time
 
 import psutil
 
-from BOBBY.misc import _boot_
+from Nancy.misc import _boot_
 
 from .formatters import get_readable_time
 
