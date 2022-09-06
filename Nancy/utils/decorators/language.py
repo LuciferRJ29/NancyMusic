@@ -1,6 +1,6 @@
 from strings import get_string
-from BOBBY.misc import SUDOERS
-from BOBBY.utils.database import (get_lang, is_commanddelete_on,
+from Nancy.misc import SUDOERS
+from Nancy.utils.database import (get_lang, is_commanddelete_on,
                                        is_maintenance)
 
 
