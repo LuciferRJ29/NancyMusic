@@ -1,5 +1,5 @@
-from BOBBY import app
-from BOBBY.utils.database import get_cmode
+from Nancy import app
+from Nancy.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
