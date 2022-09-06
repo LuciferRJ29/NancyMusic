@@ -1,9 +1,9 @@
 
-from BOBBY.core.bot import BOBBYBot
-from BOBBY.core.dir import dirr
-from BOBBY.core.git import git
-from BOBBY.core.userbot import Userbot
-from BOBBY.misc import dbb, heroku, sudo
+from Nancy.core.bot import NancyBot
+from Nancy.core.dir import dirr
+from Nancy.core.git import git
+from Nancy.core.userbot import Userbot
+from Nancy.misc import dbb, heroku, sudo
 from aiohttp import ClientSession
 
 from .logging import LOGGER
@@ -24,7 +24,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = BOBBYBot()
+app = NancyBot()
 
 # Assistant Client
 userbot = Userbot()
