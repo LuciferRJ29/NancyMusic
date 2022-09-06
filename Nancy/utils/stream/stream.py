@@ -5,20 +5,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from BOBBY import Carbon, YouTube, app
-from BOBBY.core.call import Bobby
-from BOBBY.misc import db
-from BOBBY.utils.database import (add_active_chat,
+from Nancy import Carbon, YouTube, app
+from Nancy.core.call import Bobby
+from Nancy.misc import db
+from Nancy.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from BOBBY.utils.exceptions import AssistantErr
-from BOBBY.utils.inline.play import (stream_markup,
+from Nancy.utils.exceptions import AssistantErr
+from Nancy.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from BOBBY.utils.inline.playlist import close_markup
-from BOBBY.utils.pastebin import Bobbybin
-from BOBBY.utils.stream.queue import put_queue, put_queue_index
-from BOBBY.utils.thumbnails import gen_thumb
+from Nancy.utils.inline.playlist import close_markup
+from Nancy.utils.pastebin import Nancybin
+from Nancy.utils.stream.queue import put_queue, put_queue_index
+from Nancy.utils.thumbnails import gen_thumb
 
 
 async def stream(
@@ -40,7 +40,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await Bobby.force_stop_stream(chat_id)
+        await Nancy.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -120,7 +120,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Bobbybin(msg)
+            link = await Nancybin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
