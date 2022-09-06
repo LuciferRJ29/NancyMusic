@@ -12,17 +12,17 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from BOBBY import YouTube, app
-from BOBBY.core.userbot import assistants
-from BOBBY.misc import SUDOERS, pymongodb
-from BOBBY.plugins import ALL_MODULES
-from BOBBY.utils.database import (get_global_tops,
+from Nancy import YouTube, app
+from Nancy.core.userbot import assistants
+from Nancy.misc import SUDOERS, pymongodb
+from Nancy.plugins import ALL_MODULES
+from Nancy.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from BOBBY.utils.decorators.language import language, languageCB
-from BOBBY.utils.inline.stats import (back_stats_buttons,
+from Nancy.utils.decorators.language import language, languageCB
+from Nancy.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
@@ -180,7 +180,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🍒 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/comrade_robotz) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f"🍒 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/DevilsHaveliMF) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                 else:
                     msg += f"📌 [{title}](https://www.youtube.com/watch?v={items}) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
 
