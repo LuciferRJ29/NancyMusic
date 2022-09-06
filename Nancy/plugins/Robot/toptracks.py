@@ -4,14 +4,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from BOBBY import app
-from BOBBY.utils.database import (get_global_tops,
+from Nancy import app
+from Nancy.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
-from BOBBY.utils.decorators.language import languageCB
-from BOBBY.utils.inline.playlist import (botplaylist_markup,
+from Nancy.utils.decorators.language import languageCB
+from Nancy.utils.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from BOBBY.utils.stream.stream import stream
+from Nancy.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 
