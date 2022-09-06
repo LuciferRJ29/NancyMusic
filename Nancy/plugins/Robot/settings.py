@@ -6,8 +6,8 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 from config import (BANNED_USERS, CLEANMODE_DELETE_MINS,
                     MUSIC_BOT_NAME, OWNER_ID)
 from strings import get_command
-from BOBBY import app
-from BOBBY.utils.database import (add_nonadmin_chat,
+from Nancy import app
+from Nancy.utils.database import (add_nonadmin_chat,
                                        cleanmode_off, cleanmode_on,
                                        commanddelete_off,
                                        commanddelete_on,
@@ -22,13 +22,13 @@ from BOBBY.utils.database import (add_nonadmin_chat,
                                        save_audio_bitrate,
                                        save_video_bitrate,
                                        set_playmode, set_playtype)
-from BOBBY.utils.decorators.admins import ActualAdminCB
-from BOBBY.utils.decorators.language import language, languageCB
-from BOBBY.utils.inline.settings import (
+from Nancy.utils.decorators.admins import ActualAdminCB
+from Nancy.utils.decorators.language import language, languageCB
+from Nancy.utils.inline.settings import (
     audio_quality_markup, auth_users_markup,
     cleanmode_settings_markup, playmode_users_markup, setting_markup,
     video_quality_markup)
-from BOBBY.utils.inline.start import private_panel
+from Nancy.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
