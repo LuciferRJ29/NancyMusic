@@ -3,14 +3,14 @@ import asyncio
 from pyrogram.types import InlineKeyboardMarkup
 
 from strings import get_string
-from BOBBY.misc import db
-from BOBBY.utils.database import (get_active_chats, get_lang,
+from Nancy.misc import db
+from Nancy.utils.database import (get_active_chats, get_lang,
                                        is_music_playing)
-from BOBBY.utils.formatters import seconds_to_min
-from BOBBY.utils.inline import (stream_markup_timer,
+from Nancy.utils.formatters import seconds_to_min
+from Nancy.utils.inline import (stream_markup_timer,
                                      telegram_markup_timer)
 
-from BOBBY.plugins.Robot.callback import wrong
+from Nancy.plugins.Robot.callback import wrong
 
 checker = {}
 
