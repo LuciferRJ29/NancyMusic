@@ -10,21 +10,21 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from BOBBY import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from Nancy import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from BOBBY.core.call import Bobby
-from BOBBY.utils import seconds_to_min, time_to_seconds
-from BOBBY.utils.channelplay import get_channeplayCB
-from BOBBY.utils.database import is_video_allowed
-from BOBBY.utils.decorators.language import languageCB
-from BOBBY.utils.decorators.play import PlayWrapper
-from BOBBY.utils.formatters import formats
-from BOBBY.utils.inline.play import (livestream_markup,
+from Nancy.core.call import Nancy
+from Nancy.utils import seconds_to_min, time_to_seconds
+from Nancy.utils.channelplay import get_channeplayCB
+from Nancy.utils.database import is_video_allowed
+from Nancy.utils.decorators.language import languageCB
+from Nancy.utils.decorators.play import PlayWrapper
+from Nancy.utils.formatters import formats
+from Nancy.utils.inline.play import (livestream_markup,
                                           playlist_markup,
                                           slider_markup, track_markup)
-from BOBBY.utils.inline.playlist import botplaylist_markup
-from BOBBY.utils.logger import play_logs
-from BOBBY.utils.stream.stream import stream
+from Nancy.utils.inline.playlist import botplaylist_markup
+from Nancy.utils.logger import play_logs
+from Nancy.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
