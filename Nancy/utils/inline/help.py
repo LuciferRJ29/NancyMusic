@@ -2,7 +2,7 @@ from typing import Union
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from BOBBY import app
+from Nancy import app
 from config import SUPPORT_GROUP
 
 
@@ -98,7 +98,7 @@ def help_back_markup(_):
                     text=_["CLOSE_BUTTON"], callback_data=f"close"
                 ),
                 InlineKeyboardButton(
-                    text="• sᴜᴩᴩᴏʀᴛ •", url=f"comrade_robotz"
+                    text="• sᴜᴩᴩᴏʀᴛ •", url=f"DevilsHaveliMF"
                 ),
             ]
         ]
