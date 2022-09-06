@@ -4,15 +4,15 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import YouTube, app
-from BOBBY.core.call import Bobby
-from BOBBY.misc import db
-from BOBBY.utils.database import get_loop
-from BOBBY.utils.decorators import AdminRightsCheck
-from BOBBY.utils.inline.play import (stream_markup,
+from Nancy import YouTube, app
+from Nancy.core.call import Nancy
+from Nancy.misc import db
+from Nancy.utils.database import get_loop
+from Nancy.utils.decorators import AdminRightsCheck
+from Nancy.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from BOBBY.utils.stream.autoclear import auto_clean
-from BOBBY.utils.thumbnails import gen_thumb
+from Nancy.utils.stream.autoclear import auto_clean
+from Nancy.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -140,7 +140,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await mystic.edit_text(_["call_9"])
         try:
-            await Bobby.skip_stream(chat_id, file_path, video=status)
+            await Nancy.skip_stream(chat_id, file_path, video=status)
         except Exception:
             return await mystic.edit_text(_["call_9"])
         button = stream_markup(_, videoid, chat_id)
@@ -158,7 +158,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Bobby.skip_stream(chat_id, videoid, video=status)
+            await Nancy.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -171,7 +171,7 @@ async def skip(cli, message: Message, _, chat_id):
         db[chat_id][0]["markup"] = "tg"
     else:
         try:
-            await Bobby.skip_stream(chat_id, queued, video=status)
+            await Nancy.skip_stream(chat_id, queued, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         if videoid == "telegram":
