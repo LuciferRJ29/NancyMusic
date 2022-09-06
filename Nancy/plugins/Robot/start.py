@@ -9,18 +9,18 @@ import config
 from config import BANNED_USERS
 from config.config import OWNER_ID
 from strings import get_command, get_string
-from BOBBY import Telegram, YouTube, app
-from BOBBY.misc import SUDOERS
-from BOBBY.plugins.Robot.playlist import del_plist_msg
-from BOBBY.plugins.Robot.sudoers import sudoers_list
-from BOBBY.utils.database import (add_served_chat,
+from Nancy import Telegram, YouTube, app
+from Nancy.misc import SUDOERS
+from Nancy.plugins.Robot.playlist import del_plist_msg
+from Nancy.plugins.Robot.sudoers import sudoers_list
+from Nancy.utils.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from BOBBY.utils.decorators.language import LanguageStart
-from BOBBY.utils.inline import (help_pannel, private_panel,
+from Nancy.utils.decorators.language import LanguageStart
+from Nancy.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
@@ -84,7 +84,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/AlishaSupport) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/DevilsHaveliMF) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -156,7 +156,7 @@ async def start_comm(client, message: Message, _):
                             text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/comrade_robotz"
+                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/DevilsHaveliMF"
                         ),
                     ],
                 ]
