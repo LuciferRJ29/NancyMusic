@@ -4,10 +4,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils.database.memorydatabase import get_video_limit
-from BOBBY.utils.formatters import convert_bytes
+from Nancy import app
+from Nancy.misc import SUDOERS
+from Nancy.utils.database.memorydatabase import get_video_limit
+from Nancy.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
