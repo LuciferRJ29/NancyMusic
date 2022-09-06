@@ -9,8 +9,8 @@ from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from BOBBY.utils.database import is_on_off
-from BOBBY.utils.formatters import time_to_seconds
+from Nancy.utils.database import is_on_off
+from Nancy.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
