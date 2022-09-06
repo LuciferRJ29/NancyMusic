@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import YouTube, app
-from BOBBY.core.call import Anon
-from BOBBY.misc import db
-from BOBBY.utils import AdminRightsCheck, seconds_to_min
+from Nancy import YouTube, app
+from Nancy.core.call import Anon
+from Nancy.misc import db
+from Nancy.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
