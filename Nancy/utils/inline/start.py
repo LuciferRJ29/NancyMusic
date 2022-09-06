@@ -3,7 +3,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from BOBBY import app
+from Nancy import app
 
 
 def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
