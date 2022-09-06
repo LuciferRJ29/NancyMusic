@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID, MUSIC_BOT_NAME
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import SUDOERS
-from BOBBY.utils.database import add_sudo, remove_sudo
-from BOBBY.utils.decorators.language import language
+from Nancy import app
+from Nancy.misc import SUDOERS
+from Nancy.utils.database import add_sudo, remove_sudo
+from Nancy.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
