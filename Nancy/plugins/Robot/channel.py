@@ -3,9 +3,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BOBBY import app
-from BOBBY.utils.database import set_cmode
-from BOBBY.utils.decorators.admins import AdminActual
+from Nancy import app
+from Nancy.utils.database import set_cmode
+from Nancy.utils.decorators.admins import AdminActual
 
 ### Multi-Lang Commands
 CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")
