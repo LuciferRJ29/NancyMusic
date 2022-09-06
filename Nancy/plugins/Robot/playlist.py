@@ -8,12 +8,12 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
-from BOBBY import Carbon, YouTube, app
-from BOBBY.utils.database import (delete_playlist, get_playlist,
+from Nancy import Carbon, YouTube, app
+from Nancy.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from BOBBY.utils.decorators.language import language, languageCB
-from BOBBY.utils.inline.playlist import (botplaylist_markup,
+from Nancy.utils.decorators.language import language, languageCB
+from Nancy.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
 from BOBBY.utils.pastebin import Anonbin
