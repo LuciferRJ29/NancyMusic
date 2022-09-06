@@ -6,20 +6,20 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
-from BOBBY import YouTube, app
-from BOBBY.core.call import Bobby
-from BOBBY.misc import SUDOERS, db
-from BOBBY.utils.database import (is_active_chat,
+from Nancy import YouTube, app
+from Nancy.core.call import Nancy 
+from Nancy.misc import SUDOERS, db
+from Nancy.utils.database import (is_active_chat,
                                        is_music_playing, set_loop,
                                        is_nonadmin_chat, music_off,
                                        music_on)
-from BOBBY.utils.decorators.language import languageCB
-from BOBBY.utils.formatters import seconds_to_min
-from BOBBY.utils.inline.play import (panel_markup_1,
+from Nancy.utils.decorators.language import languageCB
+from Nancy.utils.formatters import seconds_to_min
+from Nancy.utils.inline.play import (panel_markup_1,
                                           stream_markup,
                                           telegram_markup)
-from BOBBY.utils.stream.autoclear import auto_clean
-from BOBBY.utils.thumbnails import gen_thumb
+from Nancy.utils.stream.autoclear import auto_clean
+from Nancy.utils.thumbnails import gen_thumb
 
 wrong = {}
 
@@ -105,7 +105,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Bobby.pause_stream(chat_id)
+        await Nancy.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention)
         )
@@ -116,13 +116,13 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await Bobby.resume_stream(chat_id)
+        await Nancy.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention)
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await Bobby.stop_stream(chat_id)
+        await Nancy.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.reply_text(
             _["admin_9"].format(mention)
@@ -185,7 +185,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention)
                 )
-                return await Bobby.stop_stream(chat_id)
+                return await Nancy.stop_stream(chat_id)
             except:
                 return
         await CallbackQuery.answer()
@@ -203,7 +203,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_11"].format(title)
                 )
             try:
-                await Bobby.skip_stream(chat_id, link, video=status)
+                await Nancy.skip_stream(chat_id, link, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -256,7 +256,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await Bobby.skip_stream(
+                await Nancy.skip_stream(
                     chat_id, videoid, video=status
                 )
             except Exception:
@@ -274,7 +274,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await CallbackQuery.edit_message_text(txt)
         else:
             try:
-                await Bobby.skip_stream(chat_id, queued, video=status)
+                await Nancy.skip_stream(chat_id, queued, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -369,7 +369,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if n == 0:
                 return await mystic.edit_text(_["admin_30"])
         try:
-            await Bobby.seek_stream(
+            await Nancy.seek_stream(
                 chat_id,
                 file_path,
                 seconds_to_min(to_seek),
