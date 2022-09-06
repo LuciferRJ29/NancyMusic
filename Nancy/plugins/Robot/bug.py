@@ -8,12 +8,12 @@ from pyrogram.types import (
     Message,
 )
 
-from BOBBY import app as Client
+from Nancy import app as Client
 from config import (
     OWNER_ID as owner_id,
 )
 
-SUPPORT = "comrade_robotz"
+SUPPORT = "DevilsHaveliMF"
 
 def content(msg: Message) -> [None, str]:
     text_to_return = msg.text
@@ -42,10 +42,10 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/56d1760224589ee370186.jpg"
+    thumb = "https://telegra.ph/file/9436abd53b414120c5e7b.jpg"
     
     bug_report = f"""
-**#ʙᴜɢ :** **@love_you_bobby**
+**#ʙᴜɢ :** **@Lucifer_was_bot**
 **ʀᴇᴩᴏʀᴛᴇᴅ ʙʏ :** **{mention}**
 **ᴜsᴇʀ ɪᴅ :** **{user_id}**
 **ᴄʜᴀᴛ :** **{chat_username}**
