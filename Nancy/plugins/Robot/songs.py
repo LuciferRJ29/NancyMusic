@@ -11,10 +11,10 @@ from pyrogram.types import (InlineKeyboardButton,
 from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
 from strings import get_command
-from BOBBY import YouTube, app
-from BOBBY.utils.decorators.language import language, languageCB
-from BOBBY.utils.formatters import convert_bytes
-from BOBBY.utils.inline.song import song_markup
+from Nancy import YouTube, app
+from Nancy.utils.decorators.language import language, languageCB
+from Nancy.utils.formatters import convert_bytes
+from Nancy.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")
