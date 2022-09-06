@@ -1,12 +1,12 @@
 import aiohttp
 from pyrogram import filters
-from BOBBY import app
+from Nancy import app
 
 
 @app.on_message(filters.command(["github", "git"]))
 async def github(_, message):
     if len(message.command) != 2:
-        await message.reply_text("/git love-u-bobby")
+        await message.reply_text("/git LuciferRJ29")
         return
     username = message.text.split(None, 1)[1]
     URL = f'https://api.github.com/users/{username}'
