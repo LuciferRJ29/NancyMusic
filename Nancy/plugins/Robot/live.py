@@ -1,10 +1,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from BOBBY import YouTube, app
-from BOBBY.utils.channelplay import get_channeplayCB
-from BOBBY.utils.decorators.language import languageCB
-from BOBBY.utils.stream.stream import stream
+from Nancy import YouTube, app
+from Nancy.utils.channelplay import get_channeplayCB
+from Nancy.utils.decorators.language import languageCB
+from Nancy.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
