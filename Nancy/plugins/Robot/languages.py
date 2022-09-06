@@ -4,9 +4,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from BOBBY import app
-from BOBBY.utils.database import get_lang, set_lang
-from BOBBY.utils.decorators import (ActualAdminCB, language,
+from Nancy import app
+from Nancy.utils.database import get_lang, set_lang
+from Nancy.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
