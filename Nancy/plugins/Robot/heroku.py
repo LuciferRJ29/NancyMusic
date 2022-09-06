@@ -15,13 +15,13 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from BOBBY import app
-from BOBBY.misc import HAPP, SUDOERS, XCB
-from BOBBY.utils.database import (get_active_chats,
+from Nancy import app
+from Nancy.misc import HAPP, SUDOERS, XCB
+from Nancy.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from BOBBY.utils.decorators.language import language
-from BOBBY.utils.pastebin import Anonbin
+from Nancy.utils.decorators.language import language
+from Nancy.utils.pastebin import Anonbin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
