@@ -5,13 +5,13 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
-from BOBBY import app
-from BOBBY.core.call import Bobby
-from BOBBY.misc import db
-from BOBBY.utils.database import get_authuser_names, get_cmode
-from BOBBY.utils.decorators import (ActualAdminCB, AdminActual,
+from Nancy import app
+from Nancy.core.call import Nancy
+from Nancy.misc import db
+from Nancy.utils.database import get_authuser_names, get_cmode
+from Nancy.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from BOBBY.utils.formatters import alpha_to_int
+from Nancy.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
