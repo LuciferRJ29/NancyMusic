@@ -1,6 +1,6 @@
 from config import LOG, LOG_GROUP_ID, MUSIC_BOT_NAME
-from BOBBY import app
-from BOBBY.utils.database import is_on_off
+from Nancy import app
+from Nancy.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):
